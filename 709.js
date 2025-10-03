@@ -3,18 +3,17 @@
  * @return {string}
  */
 var toLowerCase = function (s) {
-    let stringResult = "";
+    let result = "";
 
     for (let i = 0; i < s.length; i++) {
         const ascii = s.charCodeAt(i);
-        let upper = 0;
+        let offset = 0;
         if (ascii >= 65 && ascii <= 90) {
-            upper = 32;
+            offset = 32;
         }
-        const char = String.fromCharCode(ascii + upper);
-        stringResult += char;
+        result += String.fromCharCode(ascii + offset);;
     }
-    return stringResult;
+    return result;
 };
 
 s = "AMARELO EH A COR DO AMOR";
