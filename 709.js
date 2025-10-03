@@ -11,7 +11,7 @@ var toLowerCase = function (s) {
         if (ascii >= 65 && ascii <= 90) {
             offset = 32;
         }
-        result += String.fromCharCode(ascii + offset);;
+        result += String.fromCharCode(ascii + offset);
     }
     return result;
 };
